@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "50 9 * * *"
 jobs:
   update-gist:
     runs-on: ubuntu-latest
@@ -15,4 +15,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 8068da99345dc93f396c2670eb6a9ab5
-          TIMEZONE: de-DE
+          TIMEZONE: Europe/Berlin
